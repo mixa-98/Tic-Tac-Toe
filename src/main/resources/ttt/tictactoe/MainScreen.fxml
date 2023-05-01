@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ttt.tictactoe.MainScreenController">
+   <children>
+      <Button alignment="CENTER" ellipsisString="" layoutX="480.0" layoutY="480.0" mnemonicParsing="false" onAction="#onSettingsButtonClick" prefHeight="240.0" prefWidth="960.0" style="-fx-background-color: #bfbfbf;" text="Settings">
+         <font>
+            <Font name="Century" size="96.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" ellipsisString="" layoutX="360.0" layoutY="840.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="240.0" prefWidth="1200.0" style="-fx-background-color: #802a1f;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Century" size="96.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" ellipsisString="" layoutX="480.0" layoutY="120.0" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="240.0" prefWidth="960.0" style="-fx-background-color: #bfbfbf;" text="Start">
+         <font>
+            <Font name="Century" size="96.0" />
+         </font>
+      </Button>
+      <Pane fx:id="settingsPane" layoutX="240.0" layoutY="120.0" opacity="0.95" prefHeight="840.0" prefWidth="1440.0" style="-fx-background-color: #bfbfbf;" visible="false">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onSettingsExitButtonClick" prefHeight="120.0" prefWidth="240.0" style="-fx-background-color: #7f7f7f;" text="🠔">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Button>
+            <Text layoutX="480.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master volume" textAlignment="CENTER" wrappingWidth="480.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Slider fx:id="masterVolSlider" layoutX="360.0" layoutY="140.0" prefHeight="60.0" prefWidth="720.0" showTickMarks="true" style="-fx-background-color: #7f7f7f;" />
+            <Text layoutX="480.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Music" textAlignment="CENTER" wrappingWidth="480.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Slider fx:id="musicSlider" layoutX="360.0" layoutY="310.0" prefHeight="60.0" prefWidth="720.0" showTickMarks="true" style="-fx-background-color: #7f7f7f;" />
+            <Text layoutX="480.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sounds" textAlignment="CENTER" wrappingWidth="480.0">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Text>
+            <Slider fx:id="soundsSlider" layoutX="360.0" layoutY="480.0" prefHeight="60.0" prefWidth="720.0" showTickMarks="true" style="-fx-background-color: #7f7f7f;" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

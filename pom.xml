@@ -39,6 +39,11 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.0</version>
+            </plugin>
             <!--create linked image-->
             <plugin>
                 <groupId>org.openjfx</groupId>
@@ -54,9 +59,9 @@
                 </executions>
                 <configuration>
                     <mainClass>ttt.tictactoe/ttt.tictactoe.TicTacToeApp</mainClass>
-                    <compress>0</compress>
-                    <noManPages>false</noManPages>
-                    <noHeaderFiles>false</noHeaderFiles>
+                    <compress>2</compress>
+                    <noManPages>true</noManPages>
+                    <noHeaderFiles>true</noHeaderFiles>
                     <stripDebug>true</stripDebug>
                     <launcher>${project.artifactId}</launcher>
                 </configuration>

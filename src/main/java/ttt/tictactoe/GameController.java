@@ -11,6 +11,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.nio.file.FileSystems;
 import java.util.List;
 
 public class GameController {
@@ -36,7 +39,7 @@ public class GameController {
     private Pane GameOverPane;
 
     private void paintSquare(byte squareID, String color) {
-        Image image = new Image(GameController.class.getResource(color + ".png").getPath().substring(1));
+        Image image = new Image(GameLogic.class.getResourceAsStream(color + ".png"));
         switch (squareID) {
             case 1 -> square1.setImage(image);
             case 2 -> square2.setImage(image);
